@@ -1,0 +1,157 @@
+/* fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+
+
+/* header section  */
+/* .header{
+ display: flex;
+ justify-content: center;
+} */
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a{
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+
+
+
+.btn {
+  padding: 10px 24px;
+  background: #e02c6d;
+  border-radius: 41px;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+/* banner section starts */
+.banner {
+  display: flex;
+  justify-content: center;
+  gap: 85px;
+  margin-bottom: 100px;
+}
+.banner-description {
+  width: 582px;
+  height: 270px;
+}
+.banner-info {
+  padding: 16px 0;
+}
+.banner-image {
+  width: 440px;
+  height: 414px;
+}
+.banner-image img {
+  width: 100%;
+}
+
+/* logos section  */
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+  align-items: center;
+}
+
+/* popular collecton section */
+.popular-collection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.collectons-container{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+justify-content: center;
+row-gap: 30px;
+column-gap: 30px;
+
+}
+.single-collection {
+  width: 329px;
+  height: 476px;
+
+}
+.collection-description , .collection-rating {
+  color: #787885;
+}
+
+.fa-star.filled {
+  color: #ffc014;
+}
+.fa-star.blank {
+  color: #aeaeae;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------- responsive section---------- 
+----------------------------------------- */
+
+/* mobile  */
+@media screen and (max-width: 576px) {
+  .banner {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .banner-description,
+  .banner-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .collectons-container{
+    /* display: grid; */
+    grid-template-columns: repeat(1,1fr);
+    /* justify-content: center;
+    row-gap: 30px;
+    column-gap: 30px; */
+    
+    }
+
+}
+
+/* tablet */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .banner-description,
+  .banner-image {
+    width: 100%;
+  }
+}
